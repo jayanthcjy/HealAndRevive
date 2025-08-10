@@ -5,14 +5,18 @@ import { useState } from "react";
 const AppointmentForm = () => {
   const [formData, setFormData] = useState({
     name: "",
-    phone: "",
+    problem: "",
     date: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
+    const message = `Hello, I would like to book an appointment.
+Name: ${formData.name}
+Problem: ${formData.problem}
+Preferred Date: ${formData.date}`;
+    const whatsappUrl = `https://wa.me/919967592858?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, "_blank");
   };
 
   const handleInputChange = (field: string, value: string) => {
@@ -50,15 +54,15 @@ const AppointmentForm = () => {
               </div>
 
               <div className="space-y-2">
-                <label htmlFor="phone" className="text-sm font-medium text-foreground">
-                  Phone Number *
+                <label htmlFor="problem" className="text-sm font-medium text-foreground">
+                  Problem *
                 </label>
                 <Input
-                  id="phone"
-                  type="tel"
-                  placeholder="Enter your phone number"
-                  value={formData.phone}
-                  onChange={(e) => handleInputChange("phone", e.target.value)}
+                  id="problem"
+                  type="text"
+                  placeholder="Tell us your problem"
+                  value={formData.problem}
+                  onChange={(e) => handleInputChange("problem", e.target.value)}
                   required
                   className="h-12"
                 />

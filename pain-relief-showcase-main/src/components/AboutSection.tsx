@@ -24,20 +24,12 @@ const AboutSection = () => {
           {/* Right - Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h3 className="text-lg font-semibold text-primary">Physiotherapist in Mulund</h3>
+              <h3 className="text-lg font-semibold text-primary">Physiotherapist in Chikoowadi, Mumbai</h3>
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
-                Best Physiotherapy Clinic in Mumbai
+                Heal And Revive Physiotherapy Clinic
               </h2>
               <p className="text-lg text-muted-foreground">
-                With over a decade of experience in providing top-notch physiotherapy services, 
-                we are committed to helping our patients achieve optimal health and wellness. 
-                Our state-of-the-art facility combined with evidence-based treatments ensures 
-                the best possible outcomes for every patient.
-              </p>
-              <p className="text-lg text-muted-foreground">
-                We specialize in treating a wide range of conditions including neck pain, 
-                back pain, sports injuries, and post-surgical rehabilitation. Our personalized 
-                approach ensures that each treatment plan is tailored to your specific needs.
+                With 10+ years of expertise, Dr. Dipexa B.P.Th. (MUM) MIAP provides evidence-based physiotherapy for neck pain, back pain, sports injuries, and post-surgical recovery, all with personalized care for lasting wellness.
               </p>
             </div>
 

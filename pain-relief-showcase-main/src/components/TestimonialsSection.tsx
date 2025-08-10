@@ -4,22 +4,22 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Priya Sharma",
-      role: "Software Engineer",
+      name: "Patient 1",
+      role: "Recovered from Chronic Pain",
       rating: 5,
       text: "I had chronic neck pain from working long hours at my computer. The physiotherapy treatment here was exceptional. Within just 4 weeks, I was completely pain-free. The staff is professional and truly cares about patient recovery."
     },
     {
       id: 2,
-      name: "Rajesh Kumar",
-      role: "Businessman",
+      name: "Patient 2",
+      role: "Post-Surgery Rehabilitation",
       rating: 5,
       text: "After my knee surgery, I was worried about the recovery process. The rehabilitation program here exceeded my expectations. The personalized approach and state-of-the-art equipment made all the difference in my recovery."
     },
     {
       id: 3,
-      name: "Anita Patel",
-      role: "Teacher",
+      name: "Patient 3",
+      role: "Back Pain Relief",
       rating: 5,
       text: "The team here is incredible. They not only treated my back pain but also educated me on prevention techniques. I'm now pain-free and have the knowledge to maintain my health. Highly recommended!"
     }

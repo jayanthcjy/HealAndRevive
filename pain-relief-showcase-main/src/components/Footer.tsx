@@ -27,25 +27,18 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 py-12">
           {/* Logo and Contact Info */}
           <div className="space-y-6">
-            <img src={clinicLogo} alt="Physio Clinic" className="h-12 w-auto" />
+            <img src={clinicLogo} alt="Heal And Revive Physiotherapy Clinic" className="h-12 w-auto" />
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-accent" />
-                <a href="mailto:info@physioclinic.com" className="hover:text-accent transition-colors">
-                  info@physioclinic.com
-                </a>
-              </div>
-              <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-accent" />
-                <a href="tel:+919876543210" className="hover:text-accent transition-colors">
-                  +91 98765 43210
+                <a href="tel:+919967592858" className="hover:text-accent transition-colors">
+                  +91 9967592858
                 </a>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-accent mt-0.5" />
                 <div>
-                  <p>123 Health Street, Mulund East</p>
-                  <p>Mumbai, Maharashtra 400081</p>
+                  <p>Chikoowadi, Mumbai</p>
                 </div>
               </div>
             </div>
@@ -90,16 +83,12 @@ const Footer = () => {
               </div>
               <div className="space-y-2 text-background/80">
                 <div className="flex justify-between">
-                  <span>Monday - Friday</span>
-                  <span>9:00 AM - 8:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Saturday</span>
-                  <span>9:00 AM - 6:00 PM</span>
+                  <span>Monday - Saturday</span>
+                  <span>10:00 AM - 9:00 PM</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Sunday</span>
-                  <span>10:00 AM - 4:00 PM</span>
+                  <span>Closed</span>
                 </div>
               </div>
               <div className="mt-4 p-3 bg-accent/10 rounded-lg">
@@ -115,7 +104,7 @@ const Footer = () => {
         <div className="border-t border-background/20 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-background/60 text-sm">
-              © 2024 Physio Clinic Mumbai. All rights reserved.
+              © 2024 Heal And Revive Physiotherapy Clinic. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#" className="text-background/60 hover:text-accent transition-colors">

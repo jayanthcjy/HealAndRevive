@@ -10,11 +10,11 @@ const ExpertsSection = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-3xl lg:text-4xl font-bold text-foreground">
-                Meet Our <span className="text-primary">Expert Team</span>
+                Meet Our <span className="text-primary">Expert</span>
               </h2>
               <p className="text-lg text-muted-foreground">
-                Our team of certified physiotherapists brings years of experience and 
-                specialized training to provide you with the highest quality care. We stay 
+                Our certified physiotherapist, Dr. Dipexa B.P.Th.(MUM) MIAP, brings years of experience and
+                specialized training to provide you with the highest quality care. We stay
                 current with the latest research and techniques in physiotherapy.
               </p>
             </div>
@@ -51,9 +51,11 @@ const ExpertsSection = () => {
               </div>
             </div>
 
-            <Button variant="accent" size="lg">
-              Meet Our Team
-            </Button>
+            <a href="https://wa.me/919967592858" target="_blank" rel="noopener noreferrer">
+              <Button variant="accent" size="lg">
+                Meet Our Team
+              </Button>
+            </a>
           </div>
 
           {/* Right - Doctor Image */}

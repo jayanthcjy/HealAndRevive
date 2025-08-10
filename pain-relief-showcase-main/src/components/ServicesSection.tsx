@@ -7,7 +7,7 @@ const ServicesSection = () => {
     {
       id: "neck-pain",
       name: "Neck Pain",
-      image: "/placeholder.svg",
+      image: "https://res.cloudinary.com/dvwzde3vf/image/upload/v1753427389/Trigger_tefvxp.png",
       description: "Comprehensive treatment for cervical spine issues including muscle tension, herniated discs, and nerve compression. Our evidence-based approach combines manual therapy, exercise prescription, and ergonomic education.",
       features: [
         "Manual cervical spine mobilization",
@@ -19,7 +19,7 @@ const ServicesSection = () => {
     {
       id: "back-pain",
       name: "Back Pain",
-      image: "/placeholder.svg",
+      image: "https://res.cloudinary.com/dvwzde3vf/image/upload/v1753434667/backpain_hwxioc.jpg",
       description: "Expert treatment for lower back pain, sciatica, and spinal conditions. We use advanced techniques to restore function and reduce pain for long-term relief.",
       features: [
         "Spinal mobilization therapy",
@@ -31,7 +31,7 @@ const ServicesSection = () => {
     {
       id: "sports-injury",
       name: "Sports Injury",
-      image: "/placeholder.svg",
+      image: "https://res.cloudinary.com/dvwzde3vf/image/upload/v1753427627/injury_1_bfmjcb.png",
       description: "Specialized rehabilitation for athletes and active individuals. Get back to your sport stronger and more resilient with our sport-specific treatment protocols.",
       features: [
         "Sport-specific rehabilitation",
@@ -43,7 +43,7 @@ const ServicesSection = () => {
     {
       id: "rehabilitation",
       name: "Rehabilitation",
-      image: "/placeholder.svg",
+      image: "https://res.cloudinary.com/dvwzde3vf/image/upload/v1753435965/rehab_dwzrch.png",
       description: "Comprehensive post-surgical and post-injury rehabilitation programs designed to restore optimal function and prevent future complications.",
       features: [
         "Post-surgical recovery",
@@ -62,8 +62,7 @@ const ServicesSection = () => {
             Our Specialized Services
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            We offer comprehensive physiotherapy services tailored to your specific needs. 
-            Our expert team uses the latest techniques and equipment to ensure optimal recovery.
+            We offer comprehensive physiotherapy services tailored to your specific needs.
           </p>
         </div>
 
@@ -108,18 +107,19 @@ const ServicesSection = () => {
                       </ul>
                     </div>
 
-                    <Button variant="accent" size="lg">
-                      Book Consultation
-                    </Button>
+                    <a href="https://wa.me/919967592858" target="_blank" rel="noopener noreferrer">
+                      <Button variant="accent" size="lg">
+                        Book Consultation
+                      </Button>
+                    </a>
                   </div>
 
                   <div className="relative">
-                    <div className="aspect-[4/3] bg-muted rounded-2xl flex items-center justify-center">
-                      <div className="text-center text-muted-foreground">
-                        <div className="text-6xl mb-2">🏥</div>
-                        <p>Treatment Image</p>
-                      </div>
-                    </div>
+                    <img
+                      src={service.image}
+                      alt={service.name}
+                      className="w-full h-auto rounded-2xl"
+                    />
                   </div>
                 </div>
               </TabsContent>

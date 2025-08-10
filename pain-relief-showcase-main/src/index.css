@@ -10,47 +10,47 @@ All colors in HSL format for medical/healthcare professional design
   :root {
     /* Base Colors */
     --background: 0 0% 100%;
-    --foreground: 200 15% 20%;
+    --foreground: 210 55% 23%; /* Trustworthy */
 
     /* Card System */
     --card: 0 0% 100%;
-    --card-foreground: 200 15% 20%;
+    --card-foreground: 210 55% 23%; /* Trustworthy */
 
     /* Popover System */
     --popover: 0 0% 100%;
-    --popover-foreground: 200 15% 20%;
+    --popover-foreground: 210 55% 23%; /* Trustworthy */
 
-    /* Medical Teal Primary */
-    --primary: 180 100% 22%; /* #007672 */
+    /* Trustworthy (dark blue) */
+    --primary: 210 55% 23%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 180 100% 18%;
+    --primary-hover: 210 55% 18%;
 
-    /* Cream/Beige Secondary */
-    --secondary: 48 63% 88%; /* #FBEEC8 */
-    --secondary-foreground: 200 15% 20%;
+    /* Soothing (light blue) */
+    --secondary: 216 43% 69%;
+    --secondary-foreground: 210 55% 23%;
 
-    /* Bright Yellow Accent */
-    --accent: 51 100% 50%; /* #FFD200 */
-    --accent-foreground: 200 15% 20%;
-    --accent-hover: 51 100% 45%;
+    /* Compassion (pink) */
+    --accent: 10 45% 83%;
+    --accent-foreground: 210 55% 23%;
+    --accent-hover: 10 45% 78%;
 
     /* Light Muted Tones */
-    --muted: 210 40% 96%;
-    --muted-foreground: 200 10% 45%;
+    --muted: 210 14% 90%; /* Quality */
+    --muted-foreground: 210 55% 23%;
 
     /* Utility Colors */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 20% 90%;
-    --input: 210 20% 95%;
-    --ring: 180 100% 22%;
+    --border: 210 14% 90%; /* Quality */
+    --input: 210 14% 95%;
+    --ring: 210 55% 23%; /* Trustworthy */
 
     --radius: 0.75rem;
 
-    /* Medical Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(195 100% 92%), hsl(200 100% 88%));
-    --gradient-light: linear-gradient(to bottom, hsl(0 0% 100%), hsl(210 40% 98%));
+    /* New Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(216 43% 69%), hsl(10 45% 83%));
+    --gradient-light: linear-gradient(to bottom, hsl(0 0% 100%), hsl(210 14% 98%));
 
     --sidebar-background: 0 0% 98%;
 

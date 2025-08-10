@@ -17,13 +17,15 @@ const CTABanner = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="accent" size="lg" className="text-lg px-8 py-6">
-              Contact Us Today
-            </Button>
+            <a href="https://wa.me/919967592858" target="_blank" rel="noopener noreferrer">
+              <Button variant="accent" size="lg" className="text-lg px-8 py-6">
+                Contact Us Today
+              </Button>
+            </a>
             <div className="text-primary-foreground/60 text-sm">
               or call us at{" "}
-              <a href="tel:+919876543210" className="text-accent font-semibold hover:underline">
-                +91 98765 43210
+              <a href="tel:+919967592858" className="text-accent font-semibold hover:underline">
+                +91 9967592858
               </a>
             </div>
           </div>

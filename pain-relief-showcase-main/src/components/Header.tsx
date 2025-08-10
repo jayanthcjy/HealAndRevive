@@ -31,41 +31,55 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <div className="flex items-center">
-            <img src={clinicLogo} alt="Physio Clinic" className="h-10 w-auto" />
-          </div>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
-              >
-                {item.name}
-              </a>
-            ))}
-          </nav>
-
-          {/* Appointment Button */}
-          <div className="hidden md:block">
-            <Button variant="accent" size="lg">
-              Book Appointment
+        <div className="grid grid-cols-3 items-center h-16">
+          {/* Left */}
+          <div className="justify-self-start">
+            {/* Mobile Menu Button */}
+            <Button
+              variant="ghost"
+              size="icon"
+              className="md:hidden"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X /> : <Menu />}
             </Button>
+            {/* Desktop Logo */}
+            <div className="hidden md:flex items-center">
+              <img src={clinicLogo} alt="Heal And Revive Physiotherapy Clinic" className="h-10 w-auto" />
+            </div>
           </div>
 
-          {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="md:hidden"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X /> : <Menu />}
-          </Button>
+          {/* Center */}
+          <div className="justify-self-center">
+            {/* Mobile Logo */}
+            <div className="md:hidden">
+              <img src={clinicLogo} alt="Heal And Revive Physiotherapy Clinic" className="h-10 w-auto" />
+            </div>
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex items-center space-x-8">
+              {navItems.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+                >
+                  {item.name}
+                </a>
+              ))}
+            </nav>
+          </div>
+
+          {/* Right */}
+          <div className="justify-self-end">
+            {/* Appointment Button */}
+            <div className="hidden md:block">
+              <a href="https://wa.me/919967592858" target="_blank" rel="noopener noreferrer">
+                <Button variant="accent" size="lg">
+                  Book Appointment
+                </Button>
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
@@ -83,9 +97,11 @@ const Header = () => {
                 </a>
               ))}
               <div className="px-4 pt-2">
-                <Button variant="accent" className="w-full">
-                  Book Appointment
-                </Button>
+                <a href="https://wa.me/919967592858" target="_blank" rel="noopener noreferrer">
+                  <Button variant="accent" className="w-full">
+                    Book Appointment
+                  </Button>
+                </a>
               </div>
             </nav>
           </div>

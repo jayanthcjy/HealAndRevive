@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Star } from "lucide-react";
+import { Star, ArrowDown } from "lucide-react";
 import doctorHero from "@/assets/doctor-spine-hero.jpg";
 
 const HeroSection = () => {
@@ -11,20 +11,30 @@ const HeroSection = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight">
-                Say Goodbye to{" "}
-                <span className="text-primary">Acute Pain</span>
+                Move Better, Live Stronger
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg">
-                Experience expert physiotherapy treatment with our certified professionals. 
-                Get back to your active lifestyle with personalized therapy sessions.
+                Recover faster with tailored physiotherapy sessions designed just for you.
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="accent" size="lg" className="text-lg px-8 py-6">
-                Enquire Now
-              </Button>
-              <Button variant="accent-outline" size="lg" className="text-lg px-8 py-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <a href="https://wa.me/919967592858" target="_blank" rel="noopener noreferrer">
+                <Button variant="accent" size="lg" className="text-lg px-8 py-6 w-full">
+                  Enquire Now
+                </Button>
+              </a>
+              <Button
+                variant="accent-outline"
+                size="lg"
+                className="text-lg px-8 py-6 w-full"
+                onClick={() => {
+                  const aboutSection = document.getElementById("about");
+                  if (aboutSection) {
+                    aboutSection.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+              >
                 Learn More
               </Button>
             </div>
